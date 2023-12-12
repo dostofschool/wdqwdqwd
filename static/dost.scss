@@ -1,0 +1,61 @@
+@import "header.scss";
+#dobphoto {
+    text-decoration: none;
+    cursor: pointer;
+    width: max-content;
+    height: max-content;
+    border-radius: 0.85vw;
+    border: 0.2vw solid $color;
+    font-size: 2.3vw;
+    font-weight: bold;
+    display: flex;
+    background-color: rgb(170, 170, 170);
+    padding: 0.3%;
+    p {
+        background-color: inherit;
+    }
+    #texter {
+        margin-left: 1vw;
+        text-align: center;
+    }
+    #pluser {
+        rotate: 90deg;
+        padding-top: 1vw;
+        vertical-align: middle;
+    }
+}
+
+#mainer {
+    padding: 1vw;
+    margin-top: 10vh;
+}
+#bloki {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5vh;
+}
+h2 {
+    font-size: 2.3vw;
+    margin-bottom: 3vh;
+}
+.izodiv {
+    @include izodiv();
+    background-color: $formColor;
+    img {
+        height: 22vh;
+    }
+}
+.chel {
+    @include izodiv();
+    margin-top: 5vh;
+    // img {
+    //     width: 55vh;
+    // }
+    p {
+        font-size: 1.65vw;
+    }
+}
+.unshow {
+    opacity: .25; 
+    pointer-events: none; 
+}

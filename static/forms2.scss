@@ -1,0 +1,8 @@
+@import "forms.scss";
+form {
+    grid-template-rows: repeat(3, max-content);
+    #spec {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}

@@ -1,0 +1,99 @@
+$color: rgb(70, 70, 70);
+$fcolor: rgb(35,35,35);
+$profborder: 0.2vw solid;
+$bgColor: rgb(215, 215, 215);
+$whiter: rgb(255, 255, 255);
+$divColor: rgb(215, 215, 215);
+$formColor: rgb(190, 190, 190);
+$profBocolor: $profborder $color;
+@mixin izodiv() {
+    margin-bottom: 3vh;
+    text-align: center;
+    margin-right: 3vw;
+    height: max-content;
+    width: max-content;
+    padding: 1vw;
+    border: $profBocolor;
+    border-radius: 0.7vw;
+    p {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        background-color: inherit;
+        margin-top: 2vh;
+        font-size: 1.35vw;
+        margin-bottom: 1.3vh;
+    }
+    #trix {
+        background-color: inherit;
+    }
+    button {
+        cursor: pointer;
+        border: $profBocolor;
+        padding: 0.2vw;
+        display: inline-block;
+        font-size: 1.2vw;
+        background-color: rgb(160, 160, 160);
+        border-radius: 0.3vw;
+    }
+    img {
+        border: $profBocolor;
+        cursor: pointer;
+        object-fit: cover;
+        border-radius: 0.3vw;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    vertical-align: middle;
+    user-select: none;
+    overflow-x: hidden;
+    background-color: $bgColor;
+    color: $color;
+}
+header {
+    border-bottom: $profBocolor;
+    background-color: rgb(235, 235, 235);
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+    font-size: 5vh;
+    padding: 1vh 0 1vh 3vw;
+    display: flex;
+    flex-wrap: nowrap;
+    a, a:visited, a:active {
+        background-color: inherit;
+        overflow-y: hidden;
+        height: 6vh;
+        text-decoration: underline;
+        font-weight: bold;
+        margin-bottom: 0.8vh;
+    }
+    div {
+        background-color: inherit;
+        overflow-y: hidden;
+        background-color: rgb(85, 85, 85);
+        border-radius: 0.5vw;
+        border: $profborder rgb(35,35,35);
+        width: max-content;
+        display: grid;
+        margin: 0 4.5vw 0 auto;
+        height: 6vh;
+        line-height: 6vh;
+        a, a:visited, a:active {
+            color: $whiter;
+            text-decoration: none;
+            padding-left: 0.8vw;
+            padding-right: 0.8vw;
+            font-size: 5vh;
+        }
+    }
+}
+main {
+    margin-top: 10vh;
+}
+::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,62 @@
+@import "header.scss";
+main {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 2vw;
+    padding: 0.5vw;
+    overflow-y: auto;
+}
+.proba {
+    overflow-y: hidden;
+    cursor: pointer;
+    width: max-content;
+    height: max-content;
+    border-radius: 0.85vw;
+    border: 0.2vw solid $color;
+    font-size: 2vw;
+    font-weight: bold;
+    margin-bottom: 5vh;
+    background-color: rgb(170, 170, 170);
+    padding-left: 1vw;
+    padding-right: 0.3vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    p {
+        padding-bottom: 0.75vh;
+        background-color: inherit;
+        span {
+            background-color: inherit;
+            word-break: break-all;
+        }
+    }
+    .plusik {
+        padding-bottom: 0.5vh;
+        background-color: inherit;
+        margin: auto 0 auto 0;
+        margin-left: 2vw;
+        margin-right: 0.5vw;
+        transition: rotate 2s, color 2s;
+    }
+}
+.dosti {
+    overflow-y: hidden;
+    width: auto;
+    height: auto;
+    transition: height 1s, margin-bottom 2s;
+    p {
+        font-size: 1vw;
+    }
+}
+.prev {
+    height: 0;
+    margin-bottom: 0;
+}
+.next {
+    height: 6vh;
+    margin-bottom: 5vh;
+}
+.plusafter {
+    rotate: 360deg;
+    color: rgb(170, 170, 170);
+}

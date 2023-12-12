@@ -1,0 +1,106 @@
+@import "header.scss";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    vertical-align: middle;
+    user-select: none;
+    overflow: hidden;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: $bgColor;
+}
+.theforma {
+    color: $fcolor;
+    background-color: $formColor;
+    font-size: 2.5vh;
+    padding: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    border-radius: 0.7vw;
+    border: $profBocolor;
+    height: max-content;
+    form {
+        display: grid;
+        background-color: inherit;
+        grid-template-columns: repeat(2, max-content);
+        grid-template-rows: repeat(3, max-content);
+        column-gap: 2.5vw;
+        row-gap: 1.5vh;
+        grid-auto-flow: column;
+        .spec {
+            background-color: inherit;
+            display: flex;
+            justify-content: right;
+            button {
+                color: $fcolor;
+                font-size: 3vh;
+                border: $profborder $fcolor;
+                padding: 0.5%;
+                background-color: $divColor;
+                border-radius: 0.5vw;
+                cursor: pointer;
+            }
+        }
+        #levbut {
+            margin: 0 auto 0 0;
+            a, a:visited, a:active {
+                color: $fcolor;
+                text-decoration: none;
+                background-color: inherit;
+            }
+        }
+    }
+    input, textarea {
+        outline: none;
+        border: $profBocolor;
+        height: max-content;
+        color: $fcolor;
+        resize: none;
+        font-size: 2.5vh;
+        background-color: $divColor;
+    }
+    p {
+        background-color: inherit;
+        vertical-align: middle;
+        color: $fcolor;
+    }
+    #vnim {
+        background-color: inherit;
+        font-weight: bold;
+        color: rgb(255, 40, 40);
+        text-align: center;
+        margin-top: 1vh;
+        font-size: 3vh;
+    }
+}
+
+.input-file {
+    background-color: inherit;
+	position: relative;
+}
+.input-file span {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+    font-size: 3.7vh;
+    background-color: $divColor;
+	text-align: center;
+	line-height: 3.7vh;
+    border: $profBocolor;
+    padding: 0.2vw;
+    max-width: 35vw;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}

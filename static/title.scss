@@ -1,0 +1,64 @@
+@import "header.scss";
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.obsh {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.0);
+    height: 100vh;
+    color: #f1f1f1;
+    width: 100vw;
+}
+.verh {
+    background-color: inherit;
+    display: flex;
+    height: 90vh;
+    justify-content: space-between;
+    align-items: center; 
+}
+.chtob {
+    padding: 0.6vw;
+    background-color: inherit;
+    border: $profBocolor;
+    margin-right: 10vw;
+    background-color: $divColor;
+    border-radius: 0.7vw;
+    text-align: center;
+    font-size: 1vw;
+    p {
+        margin-bottom: 0.75vh;
+        margin-top: 0.75vh;
+    }
+    a {
+        border: $profBocolor;
+        text-decoration: none;
+        background-color: aquamarine;
+    }
+}
+.text {
+    background-color: inherit;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    p {
+        background-color: inherit;
+        color: black;
+        font-weight: bold;
+        font-size: 2vw;
+    }
+}
+#nizh {
+    width: 100vw;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.0);
+    a {
+        background-color: inherit;
+        height: max-content;
+        font-size: 3vw;
+        color: white;
+        text-decoration: none;
+    }
+}
